@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-
 import Data from './Data'
-
 import './App.css';
 
 class App extends Component {
@@ -10,29 +8,18 @@ class App extends Component {
 
     this.state = {
         githubUsername: "",
-        data: null,
         user: "",
     };
 }
 
-componentDidMount() {
-  fetch('https://api.github.com/users', {
-    // headers: {
-    //     Links: '<https://api.github.com/user/repos?page=3&per_page=100>; rel="next"'
-    // }
-  })
-    .then(response => response.json())
-    .then(data => this.setState({ data }));
-}
-
 handleSubmit = event => {
   event.preventDefault();
-  let user = this.searchUsers(this.state.githubUsername)
-  this.setState({ 
-    githubUsername: "",
-    user: user[0]
+  let url = "https://api.github.com/users/"+`${this.state.githubUsername}`
+  fetch(url, {
   })
-}
+      .then(response => response.json())
+      .then(user => this.setState({ user, githubUsername: ""}));
+  }
 
 handleUsernameChange = event => {
   this.setState({
@@ -40,11 +27,8 @@ handleUsernameChange = event => {
   })
 }
 
-searchUsers = username => {
-  return this.state.data.filter(object => object.login === username);
-}
-
   render() {
+    debugger
     return (
       <div className="App">
            <form onSubmit={event => this.handleSubmit(event)}>
