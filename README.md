@@ -1,13 +1,7 @@
 ## Introdution
-A little info about your project and/ or overview that explains **what** the project is about.
+Do you need some quick info about Github users? Just enter a Github username into this little app and see what there is to see!
 
-## Build status
-
-[![Build Status](https://travis-ci.org/akashnimare/foco.svg?branch=master)](https://travis-ci.org/akashnimare/foco)
-[![Windows Build Status](https://ci.appveyor.com/api/projects/status/github/akashnimare/foco?branch=master&svg=true)](https://ci.appveyor.com/project/akashnimare/foco/branch/master)
-
-## Screenshots
-Include logo/demo screenshot etc.
+Here is a [brief demo](https://drive.google.com/open?id=1CZw6-E8SjrRAKShHfO_K-8DrpkuFivjl)
 
 ## Tech/framework used
 
@@ -31,22 +25,22 @@ In most cases bumping the `react-scripts` version in `package.json` and running 
 
 ## Features
 1.	Input – a github username
-2.	Hit the Github Public API
-3.	Display information basic information, such as name, email, company, and number of public repos
+2.	Hit the Github Public API (specifically the /users/:username endpoint)
+3.	Display information basic information like name, email, company, and number of public repos
 
 ## Installation
 1. Fork and clone this repo
 2. Run `npm start` and enjoy!
 
 ## Tests
-Built using [React Testing Library](https://github.com/kentcdodds/react-testing-library)
+To be implemented with [React Testing Library](https://github.com/kentcdodds/react-testing-library)
 
 ## Contribute
 
 Bug reports and pull requests are welcome on GitHub at [this project's repository]. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant]("https://www.contributor-covenant.org") code of conduct.
 
 ## Credits
-Flatiron School, Wes Bos ES6 for everyone
+Many thanks to Flatiron School, Wes Bos ES6 for everyone, Facebook!
 
 ## License
 Flat-challenge is released under the [MIT License](https://opensource.org/licenses/MIT).
