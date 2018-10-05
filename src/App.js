@@ -15,7 +15,13 @@ class App extends Component {
 }
 
 componentDidMount() {
-  fetch('https://api.github.com/users')
+  const token = '372c4d1798581ed2eadcf54d4875bbad400258fd';
+ 
+  fetch('https://api.github.com/user/repos', {
+    headers: {
+      Authorization: `token ${token}`
+    }
+  })
     .then(response => response.json())
     .then(data => this.setState({ data }));
 }
@@ -23,11 +29,11 @@ componentDidMount() {
 handleSubmit(event) {
   event.preventDefault();
   debugger
-  this.sendFormDataSomewhere(event)
+  this.searchUsers(this.state.githubUsername)
   this.setState({ githubUsername: "" })
 }
 
-searchUsers(username) {
+searchUsers = (username) => {
   this.state.data.filter(object => object.login === username)
 }
 
