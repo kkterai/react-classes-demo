@@ -37,7 +37,7 @@ To be implemented with [React Testing Library](https://github.com/kentcdodds/rea
 
 ## Contribute
 
-Bug reports and pull requests are welcome on GitHub at [this project's repository]. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [this project's repository](https://github.com/kkterai/github-user-info). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org) code of conduct.
 
 ## Credits
 Many thanks to Flatiron School, Wes Bos, Facebook!
