@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-//import Data from './Data'
+import Data from './Data'
 
 import './App.css';
 
@@ -11,41 +11,47 @@ class App extends Component {
     this.state = {
         githubUsername: "",
         data: null,
+        user: "",
     };
 }
 
 componentDidMount() {
-  const token = '372c4d1798581ed2eadcf54d4875bbad400258fd';
- 
-  fetch('https://api.github.com/user/repos', {
-    headers: {
-      Authorization: `token ${token}`
-    }
+  fetch('https://api.github.com/users', {
+    // headers: {
+    //     Links: '<https://api.github.com/user/repos?page=3&per_page=100>; rel="next"'
+    // }
   })
     .then(response => response.json())
     .then(data => this.setState({ data }));
 }
 
-handleSubmit(event) {
+handleSubmit = event => {
   event.preventDefault();
-  debugger
-  this.searchUsers(this.state.githubUsername)
-  this.setState({ githubUsername: "" })
+  let user = this.searchUsers(this.state.githubUsername)
+  this.setState({ 
+    githubUsername: "",
+    user: user[0]
+  })
 }
 
-searchUsers = (username) => {
-  this.state.data.filter(object => object.login === username)
+handleUsernameChange = event => {
+  this.setState({
+    githubUsername: event.target.value
+  })
+}
+
+searchUsers = username => {
+  return this.state.data.filter(object => object.login === username);
 }
 
   render() {
     return (
       <div className="App">
-        <header className="App-header">
            <form onSubmit={event => this.handleSubmit(event)}>
               <h2>Enter a Github username:</h2>
-              <input type="text" name="githubUsername" onChange={event => this.searchUsers(event)} value={this.state.githubUsername} />
+              <input type="text" name="githubUsername" onChange={event => this.handleUsernameChange(event)} value={this.state.githubUsername} />
           </form>
-        </header>
+          <Data userInfo={this.state.user}/>
       </div>
     );
   }
