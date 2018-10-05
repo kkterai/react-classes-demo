@@ -1,4 +1,4 @@
-## Introdution
+## Introduction
 Do you want some quick info about Github users? Just enter a Github username into this little app and see what there is to see!
 
 Here is a [brief demo](https://drive.google.com/open?id=1CZw6-E8SjrRAKShHfO_K-8DrpkuFivjl)
@@ -43,4 +43,4 @@ Bug reports and pull requests are welcome on GitHub at [this project's repositor
 Many thanks to Flatiron School, Wes Bos, Facebook!
 
 ## License
-Flat-challenge is released under the [MIT License](https://opensource.org/licenses/MIT).
+This project is released under the [MIT License](https://opensource.org/licenses/MIT).
