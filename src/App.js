@@ -3,8 +3,8 @@ import Data from './Data'
 import './App.css';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
         githubUsername: "",
