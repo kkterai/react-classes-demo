@@ -2,8 +2,6 @@ import React from 'react';
 
 const Data = (props) =>
 
-//({html_url, avatar_url, repos_url, bio, email, ...rest} = props.userInfo)
-
     [<div>
         <br></br>
         { props.userInfo.name ? <h1><b>{props.userInfo.name}</b></h1> : "" }
