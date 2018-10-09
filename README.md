@@ -30,7 +30,7 @@ In most cases bumping the `react-scripts` version in `package.json` and running 
 
 ## Installation
 1. Fork and clone this repo
-2. Run `npm start` and enjoy!
+2. Run `npm install` && `npm start` and enjoy!
 
 ## Tests
 To be implemented with [React Testing Library](https://github.com/kentcdodds/react-testing-library)
