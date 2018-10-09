@@ -28,7 +28,6 @@ handleUsernameChange = event => {
 }
 
   render() {
-    debugger
     return (
       <div className="App">
            <form onSubmit={event => this.handleSubmit(event)}>
