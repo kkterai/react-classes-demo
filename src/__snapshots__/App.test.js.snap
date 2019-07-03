@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <form>
+      <h2
+        class="test"
+        data-testid="h2tag"
+      >
+        "Enter a Github username:"
+      </h2>
+      <input
+        name="githubUsername"
+        type="text"
+        value=""
+      />
+    </form>
+    <div>
+      <br />
+      <img />
+      <h2>
+        <a />
+      </h2>
+    </div>
+  </div>
+</DocumentFragment>
+`;

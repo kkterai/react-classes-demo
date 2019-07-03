@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "jest-dom": "^3.5.0",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
@@ -24,6 +25,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-testing-library": "^5.1.1"
+    "@testing-library/react": "^8.0.4"
   }
 }
